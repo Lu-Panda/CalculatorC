@@ -1,0 +1,10 @@
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\bin\Debug\CalculatorC.exe.config
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\bin\Debug\CalculatorC.exe
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\bin\Debug\CalculatorC.pdb
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.csprojAssemblyReference.cache
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.Properties.Resources.resources
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.csproj.GenerateResource.cache
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.csproj.CoreCompileInputs.cache
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.exe
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.pdb
+C:\Users\wendy\source\repos\CalculatorC\CalculatorC\obj\Debug\CalculatorC.calc.resources
