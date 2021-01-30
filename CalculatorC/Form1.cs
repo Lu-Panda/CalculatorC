@@ -25,14 +25,17 @@ namespace CalculatorC
             // labelForOperation.Text = labelForOperation.Text;
         }
 
+        // de eerste knop heeft de naam Numb1. Omdat de events gebeuren na het klikken op de knop, is er een Click achter gezet
         private void Numb1_Click(object sender, EventArgs e)
         {
-            // als de string gelijk is aan de voorwaarden, doe dan..
+            // als de text in de textbox gelijk is aan de voorwaarden, doe dan..
             if (textBox1.Text == "0" && textBox1.Text != null)
             {
+                // verander de text in de textbox en in het label
                 textBox1.Text = "1";
                 labelForOperation.Text = "1";
             }
+            // als de string niet aan de voorwaarden voldeed, doe dan..
             else
             {
                 textBox1.Text = textBox1.Text + "1";
