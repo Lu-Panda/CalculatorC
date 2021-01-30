@@ -27,6 +27,7 @@ namespace CalculatorC
 
         private void Numb1_Click(object sender, EventArgs e)
         {
+            // als de string gelijk is aan de voorwaarden, doe dan..
             if (textBox1.Text == "0" && textBox1.Text != null)
             {
                 textBox1.Text = "1";
