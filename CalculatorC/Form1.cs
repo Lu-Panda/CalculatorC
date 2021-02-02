@@ -21,21 +21,21 @@ namespace CalculatorC
         }
         private void LabelOperation_Click(object sender, EventArgs e)
         {
-            //labelForOperation.Text = "0";
-            // labelForOperation.Text = labelForOperation.Text;
+            /* labelForOperation.Text = "0";
+             labelForOperation.Text = labelForOperation.Text; */
         }
 
-        // de eerste knop heeft de naam Numb1. Omdat de events gebeuren na het klikken op de knop, is er een Click achter gezet
+        // de knop voor cijfer 1 heeft de naam Numb1. Omdat de events gebeuren na het klikken op de knop, is er een Click achter gezet
         private void Numb1_Click(object sender, EventArgs e)
         {
-            // als de text in de textbox gelijk is aan de voorwaarden, doe dan..
+            // als de text in de textbox gelijk is aan de voorwaarden, dan..
             if (textBox1.Text == "0" && textBox1.Text != null)
             {
                 // verander de text in de textbox en in het label
                 textBox1.Text = "1";
                 labelForOperation.Text = "1";
             }
-            // als de string niet aan de voorwaarden voldeed, doe dan..
+            // als de string niet aan de voorwaarden voldeed, dan..
             else
             {
                 textBox1.Text = textBox1.Text + "1";
@@ -161,8 +161,10 @@ namespace CalculatorC
             labelForOperation.Text = labelForOperation.Text + "0";
         }
 
+        // na de cijfers komen de functionaliteiten
         private void Add_Click(object sender, EventArgs e)
         {
+            // FirstNumber wordt omgezet naar het cijfer dat in de textBox staat. De string "Operation" is nodig voor de uitkomst
             FirstNumber = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "0";
             Operation = "+";
@@ -200,12 +202,16 @@ namespace CalculatorC
             Operation = "%";
         }
 
+        // de uitkomst berekenen komt na het verkrijgen van alle informatie
         private void Sum_Click(object sender, EventArgs e)
         {
+            // hier worden eerst nog twee belangrijke benodigdheden voor de berekening toegevoegd, twee doubles
             double SecondNumber;
             double Result;
 
             SecondNumber = Convert.ToDouble(textBox1.Text);
+
+            // met een if wordt gekeken welke berekening de gebruiker wil doen
 
             if (Operation == "+")
             {
@@ -230,6 +236,8 @@ namespace CalculatorC
             }
             if (Operation == "/")
             {
+                // delen door 0 is onmogelijk dus dat wordt tegen gehouden
+
                 if (SecondNumber == 0)
                 {
                     textBox1.Text = "Cannot divide by zero";
@@ -252,6 +260,7 @@ namespace CalculatorC
             }
         }
 
+        // als laatse bij het maken van fouten, is het handig als je opnieuw kan beginnen
         private void Clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
